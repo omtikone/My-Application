@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ProductDetailsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:hint="Product Details"
+        android:maxLength="25"
+        android:textColor="@color/newgreen"
+        android:layout_below="@id/priceET"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/imgcart"
+        android:layout_below="@id/textView"
+        android:src="@drawable/placeholder"/>
+        <!--android:scaleType="centerCrop"-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sr_imageDetailsTV"
+        android:hint="Description"
+        android:maxLength="25"
+        android:textColor="@color/newgreen"
+        android:layout_below="@id/textView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/sr_priceTV"
+        android:layout_alignRight="@+id/drinkNameinInfo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/image"
+        android:layout_alignParentRight="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/addquantity"
+        android:background="@drawable/plus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/quantity"
+        android:textSize="28sp"
+        android:layout_toRightOf="@+id/addquantity"/>
+
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/subquantity"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/quantity"
+        android:background="@drawable/minus"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveBtn"
+        android:text="Add To Cart"
+
+        />
+
+
+</LinearLayout>

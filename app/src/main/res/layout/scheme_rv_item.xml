@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    app:cardBackgroundColor="@color/Pedding"
+    app:cardCornerRadius="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".rv_layout">
+
+        <!--text view for our course name-->
+
+        <TextView
+            android:id="@+id/idTVSchemeName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Scheme Name"
+            android:textColor="@color/black" />
+
+
+        <!--text view for our course tracks-->
+        <TextView
+            android:id="@+id/idTVSchemeNidhi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Scheme Type"
+            android:textColor="@color/black" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/idTVSchemeDuration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Scheme Duration"
+                android:textColor="@color/black"
+                android:layout_below="@+id/idTVSchemeEligibility"/>
+
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:text="Apply"
+                android:id="@+id/applyscheme"/>
+-->
+            <!--<Button
+                android:id="@+id/deletescheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:text="Delete" />-->
+
+
+        </LinearLayout>
+
+
+        <!--text view for our course description-->
+        <!-- <TextView
+             android:id="@+id/idTVCourseDescription"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:padding="3dp"
+             android:text="Description"
+             android:textColor="@color/black" />-->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

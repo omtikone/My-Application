@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Welcome to Shetkari Sakha"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_view"
+        android:textColor="@color/black"
+        />
+
+
+    <Button
+        android:id="@+id/Move2"
+        android:layout_width="161dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/txt_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/purple_200"
+        android:text="Farmer"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/Move1"
+        android:layout_width="161dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/Move2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_200"
+        android:text="Shopkeeper"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/Move"
+        android:layout_width="161dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/Move1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_200"
+        android:text="User"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/Move4"
+        android:layout_width="161dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/Move"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_200"
+        android:text="Admin"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+
+</RelativeLayout>

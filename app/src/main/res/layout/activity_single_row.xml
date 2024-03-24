@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".single_row">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SingleRowActivity1">
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/Pedding"
+            app:cardCornerRadius="4dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                tools:context=".rv_layout">
+
+                <!--text view for our course name-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <ImageView
+                        android:id="@+id/sr_imageTV"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/sr_imageDetailsTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Product Name"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="150dp"
+                        />
+                    <TextView
+                        android:id="@+id/sr_priceTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Price"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/sr_imageDetailsTV"
+                        android:layout_marginLeft="150dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/sr_quantityTV"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Quantity"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="150dp"
+                        android:layout_below="@+id/sr_priceTV"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                   <!-- <Button
+                        android:id="@+id/btn_addToCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sr_quantityTV"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Add to Cart"
+                        android:onClick="getProductData"
+                        />-->
+
+
+                   <!-- <Button
+                        android:id="@+id/btn_buy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sr_quantityTV"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="130dp"
+                        android:text="Buy"
+                        />-->
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

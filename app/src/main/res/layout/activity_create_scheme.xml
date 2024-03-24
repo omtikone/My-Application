@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSchemeAct">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Add Goverment Scheme"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/txt_vw"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/schemename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Scheme Name"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:id="@+id/schemenidhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Scheme Nidhi"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/schemename"/>
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duration"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/schemenidhi"/>
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/duration"
+        android:layout_marginLeft="150dp"/>
+
+
+</RelativeLayout>

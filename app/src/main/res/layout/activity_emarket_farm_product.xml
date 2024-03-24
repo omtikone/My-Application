@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmarketFarmProduct">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="E-Market Farm Product"
+        android:id="@+id/showImage1Btn"
+        android:onClick="getProductData"
+        app:backgroundColor="@color/redalert"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/image1"
+        android:layout_below="@id/showImage1Btn"
+        android:src="@drawable/fertilizer"
+        android:scaleType="centerCrop"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imagesRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image1" />
+
+</RelativeLayout>
